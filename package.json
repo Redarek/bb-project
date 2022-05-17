@@ -1,21 +1,37 @@
 {
-  "name": "bbserver",
+  "name": "bb-blockchain-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redarek/bigbonch.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redarek/bigbonch/issues"
+  },
+  "homepage": "https://github.com/Redarek/bigbonch#readme",
   "dependencies": {
-    "bluebird": "^3.7.2",
+    "@metamask/onboarding": "^1.0.1",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
-    "express": "^4.18.0",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.3.3"
+    "ethers": "^5.6.6",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.3",
+    "parcel": "^2.5.0",
+    "socket.io": "^4.5.0",
+    "socket.io-client": "^4.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.16"
   }
 }
