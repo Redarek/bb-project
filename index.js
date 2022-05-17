@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const res = require('express/lib/response')
 const mongoose = require('mongoose')
 const authRouter = require('./authRouter')
+const { db_url } = require('./config')
 
 const PORT = process.env.PORT || 3000
 
@@ -21,7 +22,7 @@ app.use('/client', express.static(__dirname + '/client'))
 
 const start = async () => {
     try {
-        await mongoose.connect(`mongodb+srv://admin:admin@cluster0.kem9r.mongodb.net/bigbonch?retryWrites=true&w=majority`) //подключение БД
+        await mongoose.connect(db_url) //подключение БД
         serv.listen(PORT, () => console.log(`Server started on port ${PORT}`)) //запуск сервера
         const io = require('socket.io')(serv, {}) //socket io инициализация
         io.sockets.on('connection', function(socket) {

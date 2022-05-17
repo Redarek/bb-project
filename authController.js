@@ -23,7 +23,7 @@ class authController {
             const candidate = await User.findOne({username}) //проверяем есть ли такой username в БД
             if (candidate) {
                 //return res.status(400).json({message: "Пользователь с таким именем уже существует"})
-                res.sendFile(__dirname + '/client/index.html')
+                return res.sendFile(__dirname + '/client/index.html')
             }
             console.log('controller work2')
             const hashWalletAddress = await bcrypt.hash(walletAddress, 3) //хэш кошелька, чтобы не хранилось в открытом виде
