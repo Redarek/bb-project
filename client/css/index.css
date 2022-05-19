@@ -1,1 +1,58 @@
-/*стили страницы с игрой*/
+body{
+    margin: 0;
+    background: #70350B;
+    padding: 0 90px 0 60px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'PressStart2PRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+.menu{
+    padding-top: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding-right: 60px;
+    padding-left: 90px;
+}
+.buttonm{
+    margin-left: 30px;
+    margin-right: 60px;
+    font-family: 'PressStart2PRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    color: #fff;
+}
+.profil{
+    margin-left: 40%;
+    background: #70350B;
+    border: none;
+}
+.middlepart{
+    margin-bottom: 50px;
+}
+canvas{
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000; 
+}
+.dialog{
+    background: #C4C4C4;
+    font-size: 15px;
+    padding: 3px 25px 2px 25px;
+    margin-top: 30px;
+    width: 100%;
+}
+.text{
+    margin-top: 10px;
+    padding-top: 10px;
+}

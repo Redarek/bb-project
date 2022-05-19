@@ -1,19 +1,30 @@
 <html>
 
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="/client/css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/press-start-2p" type="text/css"/>
+        <link rel="stylesheet" href="/client/css/signup.css">
         <title>Sign up</title>
     </head>
 
     <body>
-        <div>
-            <button id='loginButton'>Login with MetaMask</button>
-            <form method="POST" action="auth/registration">
-                <label>Имя</label>
-                <input type="text" name="username" />
-                <label>Адрес кошелька</label>
-                <input type="text" name="walletAddress" id="walletAddress"/>
-                <input type="submit" value="Подтвердить"/>
-            </form>
+        <div class="Sign">
+            <img class="manSign" src="/client/img/manSign.png">
+            <div class="signSq">
+                <img class="logoS" src="/client/img/blackLogo.svg">
+                <button class="buttonM bSign" id='loginButton'><p>Подключить Metamask</p></button>
+                <form method="POST" action="auth/registration">
+                    <p class="textSign"><label>Имя пользователя</label></p>
+                    <input type="text" name="username" />
+                    <p class="textSign"><label>Адрес кошелька</label></p>
+                    <input type="text" name="walletAddress" id="walletAddress"/>
+                    <!--<p><input type="submit" value="Подтвердить"/></p> Здесь разве не button должен быть?-->
+                    <button class="buttonS bSign" id="#"><p class="tbs">Подтвердить</p></button>
+                </form>
+            </div>
         </div>
 
     <script>

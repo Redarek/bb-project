@@ -18,4 +18,26 @@ router.post('/registration',
 router.post('/login', controller.login)
 router.get('/users', roleMiddleware(['USER', 'ADMIN']), controller.getUsers)
 
+// router.get('/signup.css', function(req, res) {
+//     res.sendFile(__dirname + '/client/css/signup.css')
+// })
+// router.get('/index.css', function(req, res) {
+//     res.sendFile(__dirname + '/client/css/index.css')
+// })
+// router.get('/logo.svg', function(req, res) {
+//     res.sendFile(__dirname + '/client/img/logo.svg')
+// })
+// router.get('/blackLogo.svg', function(req, res) {
+//     res.sendFile(__dirname + '/client/img/blackLogo.svg')
+// })
+// router.get('/manSign.png', function(req, res) {
+//     res.sendFile(__dirname + '/client/img/manSign.png')
+// })
+// router.get('/profile.png', function(req, res) {
+//     res.sendFile(__dirname + '/client/img/profile.png')
+// })
+// router.get('/map.png', function(req, res) {
+//     res.sendFile(__dirname + '/client/img/map.png')
+// })
+
 module.exports = router
