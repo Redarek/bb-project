@@ -9,12 +9,43 @@
     <title>BigBonch</title>
 </head>
 <body>
-    <nav class="menu">
-        <img class="logo" src="/client/img/logo.svg">                    
-        <a href="#" class="about buttonm">О нас</a>
-        <a href="#" class="contacts buttonm">Контакты</a>
-        <a class="profil" href="#"><button  class="profil" href="#"><img class="profil" src="/client/img/profile.png"></button></a> 
-    </nav>
+    <div class="menuBlock">
+        <nav class="menu">
+                <img class="logo" src="лого.svg">                    
+                <a href="#" class="about buttonm">О нас</a>
+                <a href="#" class="contacts buttonm">Контакты</a>
+                <div class="dropdownm">
+                    <button onclick="myFunction()" class="profil" href="#"><img class="profil" src="profil.svg"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="dropdownA" href="#">Выйти</a>
+                        <a class="dropdownA" href="#"><img class="imgOnline" src="online.svg">Онлайн:</a> <!--Позже нужно добавить счётчик-->
+                        <a class="dropdownA" href="#">Мои NFT</a>
+                    </div>
+                </div>
+                <script>
+                    /* When the user clicks on the button,
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown menu if the user clicks outside of it
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.profil')) {
+                    
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                            }
+                        }
+                        }
+                    }
+                </script>
+            </nav>
+    </div>
     <div class="middlepart">
 
         <canvas height="745" width="1421" id="ctx">Обновите браузер</canvas>
