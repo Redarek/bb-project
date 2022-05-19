@@ -9,9 +9,10 @@
     <title>BigBonch</title>
 </head>
 <body>
+<<<<<<< HEAD
     <div class="menuBlock">
         <nav class="menu">
-                <img class="logo" src="лого.svg">                    
+                <img class="logo" src="./img/лого.svg">                    
                 <a href="#" class="about buttonm">О нас</a>
                 <a href="#" class="contacts buttonm">Контакты</a>
                 <div class="dropdownm">
@@ -46,6 +47,14 @@
                 </script>
             </nav>
     </div>
+=======
+    <nav class="menu">
+        <img class="logo" src="./img/logo.svg">                    
+        <a href="#" class="about buttonm">О нас</a>
+        <a href="#" class="contacts buttonm">Контакты</a>
+        <a class="profil" href="#"><button  class="profil" href="#"><img class="profil" src="./img/profile.png"></button></a> 
+    </nav>
+>>>>>>> 5521aafd57eed9e542b49e883a77b25e025d2082
     <div class="middlepart">
 
         <canvas height="745" width="1421" id="ctx">Обновите браузер</canvas>
@@ -114,11 +123,11 @@
     //game
     let Img = {};
 	Img.player = new Image();
-	Img.player.src = '/client/img/player.png';
+	Img.player.src = './img/player.png';
 	// Img.bullet = new Image();
-	// Img.bullet.src = '/client/img/bullet.png';
+	// Img.bullet.src = './img/bullet.png';
 	Img.map = new Image();
-	Img.map.src = '/client/img/map.png';
+	Img.map.src = './img/map.png';
 
     const ctx = document.getElementById("ctx").getContext("2d")
     ctx.font = '30px Arial'
