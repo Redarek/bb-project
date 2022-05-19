@@ -18,7 +18,7 @@ router.post('/registration',
 router.post('/login', controller.login)
 router.get('/users', roleMiddleware(['USER', 'ADMIN']), controller.getUsers)
 
-// router.get('/signup.css', function(req, res) {
+
 //     res.sendFile(__dirname + '/client/css/signup.css')
 // })
 // router.get('/index.css', function(req, res) {
