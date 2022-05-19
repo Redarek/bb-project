@@ -20,6 +20,9 @@ form{
 .logoS{
     margin: 20px 0 20px 200px;
 }
+.logoStart{
+    margin-left: 45px;
+}
 .textSign{
     font-size: 20px;
     margin-left: 45px;
